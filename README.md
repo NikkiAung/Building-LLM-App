@@ -14,16 +14,16 @@ Welcome to the Burmese Students Society Club! This project is built using Stream
 ## Screenshots
 
 ### Account Page
-![Account Page](./projectDemo/Screenshot%202024-06-09%20at%205.49.50%20PM.png)
+![Account Page](./projectDemo/Screenshot%202024-06-09%20at%205.49.50%E2%80%AFPM.png)
 
 ### Home Page
-![Home Page](./projectDemo/Screenshot%202024-06-09%20at%205.51.12%20PM.png)
+![Home Page](./projectDemo/Screenshot%202024-06-09%20at%205.51.12%E2%80%AFPM.png)
 
 ### Chat-Bot Page
-![Chat-Bot Page](./projectDemo/Screenshot%202024-06-09%20at%205.51.41%20PM.png)
+![Chat-Bot Page](./projectDemo/Screenshot%202024-06-09%20at%205.51.41%E2%80%AFPM.png)
 
 ### About Page
-![About Page](./projectDemo/Screenshot%202024-06-09%20at%205.51.58%20PM.png)
+![About Page](./projectDemo/Screenshot%202024-06-09%20at%205.51.58%E2%80%AFPM.png)
 
 ## Installation
 
