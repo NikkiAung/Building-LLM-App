@@ -1,6 +1,19 @@
+# Environment variables
 .env
-.txt
+
+# Text files
+*.txt
+
+# JSON files
 *.json
+
+# Virtual environment directories
 venv/
 .venv
+
+# specific Python files
+main-test.py
+data-test.py
+
+# Python cache directories
 __pycache__/

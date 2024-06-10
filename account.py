@@ -13,9 +13,11 @@ load_dotenv()
 
 cred = credentials.Certificate(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"))
 #firebase_admin.initialize_app(cred)
+WEB_API_KEY = os.getenv("WEB_API_KEY")
+
 def app():
 # Usernm = []
-    st.title('Welcome to Burmese Students Society 🇲🇲')
+    st.title('Welcome to Burmese Students Society Club 🇲🇲')
 
     if 'username' not in st.session_state:
         st.session_state.username = ''
@@ -34,7 +36,7 @@ def app():
             if username:
                 payload["displayName"] = username 
             payload = json.dumps(payload)
-            r = requests.post(rest_api_url, params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"}, data=payload)
+            r = requests.post(rest_api_url, params={"key": WEB_API_KEY}, data=payload)
             try:
                 return r.json()['email']
             except:
@@ -55,7 +57,7 @@ def app():
                 payload["password"] = password
             payload = json.dumps(payload)
             print('payload sigin',payload)
-            r = requests.post(rest_api_url, params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"}, data=payload)
+            r = requests.post(rest_api_url, params={"key": WEB_API_KEY}, data=payload)
             try:
                 data = r.json()
                 user_info = {
@@ -76,7 +78,7 @@ def app():
                 "requestType": "PASSWORD_RESET"
             }
             payload = json.dumps(payload)
-            r = requests.post(rest_api_url, params={"key": "AIzaSyApr-etDzcGcsVcmaw7R7rPxx3A09as7uw"}, data=payload)
+            r = requests.post(rest_api_url, params={"key": WEB_API_KEY}, data=payload)
             if r.status_code == 200:
                 return True, "Reset email Sent"
             else:
@@ -178,3 +180,5 @@ def app():
                             
     def ap():
         st.write('Posts')
+
+
