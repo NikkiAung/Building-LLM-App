@@ -12,7 +12,8 @@ venv/
 .venv
 
 # specific Python files
-
+main-test.py 
+data-test.py 
 
 # Python cache directories
 __pycache__/
